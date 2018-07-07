@@ -8,10 +8,10 @@ for i in range(t):
         p,q,d=map(int,input().split())
         org+=p*q
         new=(q+q*d/100)
-        dis=new*q/100
+        dis=new*d/100
         sp=new-dis
-        tot=p*sp
-        total+=tot
-    print(org-total)
+        total+=p*sp
+    diff=org-total
+    print('%0.9f'%diff)
         
         
