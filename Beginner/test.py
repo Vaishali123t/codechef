@@ -1,18 +1,7 @@
 t=int(input())
-for w in range(t):
-    n,a,b=map(int,input().split())
-    x=list(input().split())
-    y=list(map(int,input().split()))
-    print(x)
-    print(y)
-    c=0
-    d=0
-    for j in range(n):
-        if(x[j]=='1'):
-            c+=1
-            print('hello')
-        if(x[j]=='1'):
-            d+=1
-            print('hello')
-    k=c/n*d/n
-    print(k) 
+ans=[]
+for i in range(t):
+	l,k=map(int,input().split())	
+	ans.append("Case "+str(i+1)+": "+str(sum(x for x in range(l-k+2))))
+for i in ans:
+	print(i)
