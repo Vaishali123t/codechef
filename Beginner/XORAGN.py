@@ -1,4 +1,3 @@
-
 #python3
 t=int(input())
 b=[]
